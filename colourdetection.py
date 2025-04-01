@@ -6,7 +6,7 @@ pink= [203, 192, 255]
 cap = cv.VideoCapture(0)
 def get_limits(color):
     c = np.uint8([[color]])  # Convert BGR to NumPy array
-    hsvC = cv.cvtColor(c, cv.COLOR_BGR2HSV)  # Convert to HSV
+    hsvC = cv.cvtColor(c, cv.COLOR_BGR2HSV)  # Convert to HSV= hue,saturation,value
     hue = hsvC[0][0][0]  # Get the hue value
 
     # Handle red hue wrap-around
